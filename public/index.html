@@ -6,6 +6,13 @@
 		<title>My Task List</title>
 		<link rel="stylesheet" href="../src/css/main.css" />
 		<link rel="stylesheet" href="../src/css/Vazirmatn-font-face.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
 		<div class="page-wrapper container">
@@ -53,14 +60,68 @@
 				<!-- Dark overlay backdrop for mobile menu -->
 				<div class="overlay" id="overlay"></div>
 			</header>
-			<main>
-				<h2>main</h2>
+			<main id="main">
+				<div class="form-continer flex-center">
+					<form class="add-task flex-center">
+						<input class="task-input" type="text" placeholder="Type your task hear... " />
+						<button class="flex-center add-task__btn">
+							<img src="/assets/svg/plus 1.svg" alt="plus-icon" />
+							<span>Add</span>
+						</button>
+					</form>
+				</div>
+
+				<div class="task-contianer flex-center">
+					<ul class="task-list">
+						<li class="task">
+							<div class="task-info">
+								<div class="task-info__content flex-center gap-5">
+									<input type="checkbox" class="task__check" />
+									<p class="task__title">Taks One</p>
+								</div>
+								<div class="row"></div>
+								<span class="task__createdAt">2026/6/6</span>
+							</div>
+							<div class="task-btns">
+								<button class="task-btn pointer"><img src="/assets/svg/pencil 1.svg" alt="pencil" class="icon task-edit__icon" /></button>
+								<button class="task-btn pointer"><img src="/assets/svg/trash 1.svg" class="icon task-trach__icon" alt="" /></button>
+							</div>
+						</li>
+						<li class="task">
+							<div class="task-info">
+								<div class="task-info__content flex-center gap-5">
+									<input type="checkbox" class="task__check" />
+									<p class="task__title">Taks One</p>
+								</div>
+								<div class="row"></div>
+								<span class="task__createdAt">2026/6/6</span>
+							</div>
+							<div class="task-btns">
+								<button class="task-btn pointer"><img src="/assets/svg/pencil 1.svg" alt="pencil" class="icon task-edit__icon" /></button>
+								<button class="task-btn pointer"><img src="/assets/svg/trash 1.svg" class="icon task-trach__icon" alt="" /></button>
+							</div>
+						</li>
+						<li class="task">
+							<div class="task-info">
+								<div class="task-info__content flex-center gap-5">
+									<input type="checkbox" class="task__check" />
+									<p class="task__title">Taks One</p>
+								</div>
+								<div class="row"></div>
+								<span class="task__createdAt">2026/6/6</span>
+							</div>
+							<div class="task-btns">
+								<button class="task-btn pointer"><img src="/assets/svg/pencil 1.svg" alt="pencil" class="icon task-edit__icon" /></button>
+								<button class="task-btn pointer"><img src="/assets/svg/trash 1.svg" class="icon task-trach__icon" alt="" /></button>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</main>
 			<footer>
 				<h2>footer</h2>
 			</footer>
 		</div>
-
 		<script src="../src/js/app.js"></script>
 	</body>
 </html>
